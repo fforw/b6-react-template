@@ -16,6 +16,7 @@ var uglify = require("gulp-uglify");
 var watchify = require("watchify");
 
 var MAIN_FILE = "./src/main.js";
+var DESTINATION_PATH = "./dist/";
 
 function report(msg, err)
 {
@@ -114,7 +115,7 @@ function bundle(watch, cb) {
                 }
             }*/))))
             .pipe(sourcemaps.write(".")) // writes .map file
-            .pipe(gulp.dest("./dist/"));
+            .pipe(gulp.dest(DESTINATION_PATH));
     }
 
     return rebundle(bro);
