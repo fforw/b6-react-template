@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
     "babel-plugin-check-es2015-constants": "^6.3.13",
     "babel-plugin-espower": "^2.0.0",
